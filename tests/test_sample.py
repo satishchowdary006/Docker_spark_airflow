@@ -1,2 +1,5 @@
-def test_example():
-    assert 1 + 1 == 2
+from dags.data import add_numbers
+
+
+def test_add_numbers():
+    assert add_numbers(2, 3) == 5

@@ -1,4 +1,8 @@
-#
-# PS C:\Users\jskj0\IdeaProjects\de_lab> Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-# PS C:\Users\jskj0\IdeaProjects\de_lab> .\venv\Scripts\Activate.ps1
-# (venv) PS C:\Users\jskj0\IdeaProjects\de_lab>
+def add_numbers(a, b):
+    """Return the sum of two numbers."""
+    return a + b
+
+
+if __name__ == "__main__":
+    result = add_numbers(5, 3)
+    print(f"Result is: {result}")
