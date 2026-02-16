@@ -27,7 +27,7 @@ version: "3"
 services:
   spark:
     build:
-      context: ./spark
+      context: .
     image: jujjavarupusatishkumar/custom-spark:latest
     container_name: spark
     environment:
@@ -47,4 +47,3 @@ services:
       - ./dags:/opt/airflow/dags
     environment:
       - AIRFLOW__CORE__LOAD_EXAMPLES=False
-
