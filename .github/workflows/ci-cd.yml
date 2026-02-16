@@ -64,7 +64,7 @@ jobs:
 
       - name: Build Custom Spark Image
         run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/custom-spark:latest ./spark
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/custom-spark:latest .
 
       - name: Push Spark Image
         run: |
